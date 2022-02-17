@@ -45,9 +45,9 @@ public class DojoController {
     @GetMapping("/view/dojo/{id}")
     public String showDojo(@PathVariable("id") Long id,Model model){
         Dojo oneDojo = dojoService.oneDojo(id);
-        List<Ninja> ninjasAtDojo = ninjaService.ninjasAtDojo(id);
+//        List<Ninja> ninjasAtDojo = ninjaService.ninjasAtDojo(id);
         model.addAttribute("dojo", oneDojo);
-        model.addAttribute("ninjasAtDojo", ninjasAtDojo);
+//        model.addAttribute("ninjasAtDojo", ninjasAtDojo);
        
         return "oneDojo.jsp";
     }

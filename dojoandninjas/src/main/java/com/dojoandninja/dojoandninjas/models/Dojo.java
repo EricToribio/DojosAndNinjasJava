@@ -1,6 +1,6 @@
 package com.dojoandninja.dojoandninjas.models;
 
-import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
 
@@ -46,9 +46,9 @@ public class Dojo {
         
     }
 
-    public List<Ninja> getNinjas(Long id) {
+    public List<Ninja> getNinjas() {
         
-        return ninjas;
+        return this.ninjas;
     }
 
     public void setNinjas(List<Ninja> ninjas) {
